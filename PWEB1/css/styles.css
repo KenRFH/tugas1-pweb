@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(230, 157, 184);
+  color: white;
+  min-height: 4000px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #e69db8;
+  border-bottom: 3px solid #fffece;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  color: #fffece;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: rgb(158, 78, 164);
+}
+
+.navbar .navbar-nav a {
+  color: #fffece;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: white;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* Mengatur warna ikon agar sesuai dengan teks Home */
+.navbar-extra a {
+  color: #fffece; /* Ganti dengan kode warna teks Home kamu */
+}
+
+/* Memberikan jarak antar ikon */
+.navbar-extra {
+  display: flex;
+  align-items: center; /* Vertikal center */
+  gap: 1.5rem;
+  /* margin-left: 1.4rem; Atur sesuai kebutuhan, contoh 1rem */
+}
+
+.navbar-extra .user-profile {
+  display: inline-block;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fffece;
+  margin-left: 1.5rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header3-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(230, 157, 184, 1) 3%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.hero .content {
+  color: rgb(158, 78, 164);
+  display: inline-block;
+  padding: 1.4rem 5%;
+  max-width: 70%;
+  left: -20px;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.hero .content span {
+  color: hotpink;
+}
+
+.hero .content p {
+  font-size: 1.4rem;
+  margin-top: 0.7rem;
+}
+
+.hero .content .cta {
+  color: #fffece;
+  background-color: rgb(158, 78, 164);
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  border-radius: 5%;
+}
+
+.About {
+  padding: 9rem 7% 2rem;
+}
+
+.About h2 {
+  color: rgb(158, 78, 164);
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.About h2 span {
+  color: #fffece;
+}
+
+.About .row {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.About .row .about-img {
+  flex: 1 1 10rem;
+}
+
+.About .row .about-img img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.About .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1 rem;
+}
+
+.About .row .content h3 {
+  font-size: 3rem;
+  color: rgb(158, 78, 164);
+}
+
+.About .row .content p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #fffece;
+}
+
+.Menu h2 {
+  padding: 15rem 7% 0rem;
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(158, 78, 164);
+}
+
+.Menu h2 span {
+  color: #fffece;
+}
+
+.Menu p {
+  margin-top: 0rem;
+  text-align: center;
+  font-weight: 300;
+  color: #fffece;
+}
+
+.Menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.Menu .menu-card {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.menu-card img {
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+.menu-card-title {
+  margin: 1.5rem auto 0.5rem;
+}
+
+.Contact h2 {
+  padding: 10rem 7% 1.4rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #fffece;
+}
+
+.Contact h2 span {
+  color: rgb(158, 78, 164);
+}
+
+.Contact .row {
+  display: flex;
+  margin: 3rem auto;
+  background-color: #f6f5de;
+  flex-wrap: wrap;
+  height: 45rem;
+}
+
+.Contact .row .map {
+  flex: 1 1 30rem;
+  margin-top: 8rem;
+  margin-left: 3rem;
+  width: 70%;
+  object-fit: cover;
+  max-width: 800px;
+  aspect-ratio: 1/1;
+  height: 25rem;
+  border-radius: 15px;
+}
+
+/* .Contact .row form {
+  flex: 1 1 30rem;
+  color: #ef7c8e;
+  width: 50%;
+} */
+
+.Contact .row .regis-form h3 {
+  color: #e69db8;
+  font-size: 4rem;
+}
+.Contact .row .regis-form p {
+  color: rgb(158, 78, 164);
+  font-size: 1.3rem;
+}
+
+.Contact .regis-form {
+  flex: 1 1 250px; /* Perkecil lebar card */
+  background-color: #f1e7e7;
+  width: 4rem; /* Sesuaikan agar lebih kecil */
+  color: #e69db8;
+  padding: 4rem 3rem; /* Kurangi padding agar lebih ramping */
+  margin-right: 10rem;
+  margin-left: 8rem;
+  margin-top: 4rem; /* Kurangi margin agar lebih pas */
+  border-radius: 8%; /* Sedikit ubah bentuk sudut */
+  border: 1px solid rgb(55, 36, 128);
+  padding-right: 2rem;
+  height: 50rem;
+  box-shadow: 2px 2px 10px rgba(98, 45, 129, 0.5); /* Tambahkan bayangan ringan */
+}
+
+.Contact .row .regis-form .input {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgb(158, 78, 164);
+  border: 1px solid rgb(134, 73, 133);
+  padding-left: 2rem;
+  border-radius: 15px;
+}
+
+.Contact .row .regis-form .input input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1rem;
+  background: none;
+}
+
+.input input::placeholder {
+  color: white;
+}
+
+.Contact .row .btn-regis {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fffece;
+  background-color: #e69db8;
+  border-radius: 15px;
+}
+
+/* media query */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ef7c8e;
+    width: 20rem;
+    height: auto;
+    box-shadow: -5px 5px 15px rgba(52, 111, 112, 0.1);
+    max-height: 50vh;
+    transition: 0.3s ease-in-out;
+    border-radius: 7%;
+    transform: translateY(35px);
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 2.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: #fffece;
+  }
+}
+
+/* handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

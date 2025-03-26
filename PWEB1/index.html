@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuna Gelato</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Yuna<span>Gelato</span></a>
+      <div class="navbar-nav">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Contact">Contact Ice</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        <div class="user-profile">
+          <img
+            src="img/profile-picture.jpeg"
+            alt="User Profile"
+            class="profile-pic"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Section start -->
+    <section class="hero" id="Home">
+      <main class="content">
+        <h1>
+          <span>Gelato</span>, Untuk Senyum <span><br />Lebih Manis</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+          laboriosam tempore, veniam labore facilis obcaecati repellat quis
+          quibusdam illum?
+        </p>
+        <a href="" class="cta">Gelato Now</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+    <section id="About" class="About">
+      <h2><span>Yuna</span>Gelato</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/bocah-eskrim.jpeg" alt="YunaGelatoABT" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Yuna Gelato?!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab
+            exercitationem voluptate rerum recusandae ullam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut
+            repudiandae animi fuga assumenda optio esse quo facere.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Menu" class="Menu">
+      <h2><span>Me</span>nu</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+        dignissimos doloremque accusamus quae itaque maiores veritatis soluta.
+      </p>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/eskrim1.avif" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Olaf</h3>
+          <p class="menu-card-price">19k</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/eskrim1.avif" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Olaf</h3>
+          <p class="menu-card-price">19k</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/eskrim1.avif" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Olaf</h3>
+          <p class="menu-card-price">19k</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/eskrim1.avif" alt="" class="menu-card-img" />
+          <h3 class="menu-card-title">Olaf</h3>
+          <p class="menu-card-price">19k</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact" class="Contact">
+      <h2>Contact <span>Us</span></h2>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9553945043267!2d106.94215947490528!3d-6.269596793719096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698dec33bf575f%3A0xe18fbfc86c644b6e!2sAMARILIS%20RESIDENCE!5e0!3m2!1sid!2sid!4v1742893325155!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form class="regis-form">
+          <!-- <div class="card-regis"> -->
+          <h3>Yuk Daftar!</h3>
+          <p>Dapatkan promo menarik hanya dengan isi data dibawah ini!</p>
+          <!-- </div> -->
+          <div class="input">
+            <i data-feather="user"></i>
+            <input
+              type="text"
+              id="input-nama"
+              placeholder="Masukkan Nama Kamu!"
+            />
+          </div>
+          <div class="input">
+            <i data-feather="mail"></i>
+            <input
+              type="email"
+              id="input-email"
+              placeholder="contoh@email.com"
+            />
+          </div>
+          <div class="input">
+            <i data-feather="phone"></i>
+            <input
+              type="text"
+              id="input-nomor"
+              placeholder="Masukkan Nama Kamu!"
+            />
+          </div>
+          <button type="submit" class="btn-regis">Dapatkan Promo! </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
